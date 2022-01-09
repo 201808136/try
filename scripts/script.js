@@ -144,7 +144,7 @@ function savenname() {
 }
 
 
-//PERFIL -- FALTA CAMARA
+
 //numero de badges
 //fazer o número de badges dependente da quantidade de challenges que ganharam
 //ir buscar o elemento colocado no local storage
