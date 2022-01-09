@@ -215,6 +215,7 @@ body{
   
     aside {
       position: absolute;
+      z-index: 1;
     margin-top:60px;
     margin-left: 0px;
     margin-top: 200px;
@@ -473,8 +474,8 @@ background-color: rgb(157, 167, 135);
 
 form, #changedays, #feel, #changed{
 position: absolute; /* Stay in place */
-padding-left: 500px;
-padding-top: 400px;
+padding-left: 250px;
+padding-top: 270px;
 }
 
 #Result{
@@ -485,7 +486,7 @@ grid-template-columns: auto auto;
 #gráficos{
   position: absolute; /* Stay in place */
   padding-left: 530px;
-  padding-top: 230px;
+  padding-top: 200px;
   font-size: 40px;
   display: grid;
   grid-template-columns: auto auto;
@@ -503,18 +504,24 @@ grid-template-columns: auto auto;
   margin: 10px;
   }
   
-  #changedays, #changed{
+  #changedays{
     top: 15px;
-    left: 400px;
+    left: 370px;
+  }
+
+#changed{
+    width: 200px;
+    top: 15px;
+    left: 250px;
   }
   
   #feel{
-    z-index: -1;
     position: absolute;
     height: 0px;
     width: 400px;
-    margin-top: 85px;
-    margin-left: -20px;
+    margin-top: 215px;
+    margin-left: 210px;
+    
   }
 
 
@@ -713,7 +720,7 @@ opacity: 0.5;
   #gráficos{
     position: absolute; 
     padding-left: 360px;
-    padding-top: 180px;
+    padding-top: 130px;
     font-size: 25px;
     grid-template-columns: auto;
     }
@@ -729,8 +736,8 @@ opacity: 0.5;
 }
 
 #feel{
-  margin-left: -490px;
-  margin-top: 80px;
+  margin-left: -250px;
+  margin-top: 210px;
 }
 
 #mood{
@@ -740,22 +747,24 @@ margin-left: -495px;
 
 #changedays{
   transform: scale(0.9);
-margin-left: -50px;
-margin-top: 20px;
+margin-left: 70px;
+margin-top: 10px;
 }
 
-
 #changed{
+  width: 500px;
   transform: scale(0.9);
-margin-left: -740px;
+margin-left: -530px;
 margin-top: 280px;
 display: inline-grid;
   grid-template-columns: auto auto auto auto;
 }
 
+
 #changedays p{
 margin: 0;
 }
+
 
 #sbmt{
   margin-top: -260px;
@@ -830,6 +839,7 @@ right: 80px;
 	bottom: 0;
 	display: block;
   position: fixed;
+  z-index: -1;
 }
 
 #mobilenav ul{
@@ -896,8 +906,8 @@ top: 70px;
 
 #feel{
   scale: 0.9;
-  margin-top: 65px;
-  margin-left: -470px;
+  margin-top: 195px;
+  margin-left: -230px;
   }
 
 #mood{
@@ -917,13 +927,13 @@ font-size: 45%;
 }
 
 .container {
-margin-top: 20px;
+margin-top: 0px;
 left: 5%;
 }
 
 #gráficos{
-      padding-left: 5px;
-  padding-top: 480px;
+      padding-left: 10px;
+  padding-top: 430px;
   font-size: 20px;
   grid-template-columns: auto auto auto auto;
   }
@@ -935,14 +945,14 @@ left: 5%;
 
     #changedays{
     transform: scale(0.9);
-margin-left: -820px;
-margin-top: 220px;
+margin-left: 90px;
+margin-top: -30px;
     }
     
     #changed{
       transform: scale(0.8);
-    top:-50px;
-    left:310px;
+    top: -40px;
+    left:260px;
     }
     
     #sbmt{
@@ -958,6 +968,9 @@ margin-top: 220px;
          left: -5px;
        }
 
+       #am, #gr, #ok, #ng{
+        width: 250px;
+       }
 
 /*Journal*/
 .journalentry{
@@ -1088,18 +1101,19 @@ width: 90%;
     }
 
     #gráficos{
-      margin-top: -80px;
+      margin-top: -50px;
    }
 
    #feel{
-    top: -60px;
+    margin-top: 125px;
+    margin-left: -220px;
     }
 
 
   #changedays{
     scale: 0.9;
-    top:-95px;
-    left: 370px;
+    top: -20px;
+    left: 310px;
   }
   
   #sbmt{
@@ -1108,10 +1122,15 @@ width: 90%;
 
 
 #changed{
-  top:-200px;
+  top:-100px;
   left:260px;
   }
   
+
+  #am, #gr, #ok, #ng{
+    height: 70px;
+  }
+
 
   /*Profile*/
 #perfil, #logout, #change{
@@ -1166,7 +1185,7 @@ width: 90%;
 	}
 
   #gráficos{
-   margin-top: -120px;
+   margin-top: -110px;
 }
 
   #entry{
@@ -1191,16 +1210,11 @@ width: 90%;
     margin-top: -30px;
   }
 
-#feel{
-  height: 40px; 
-  font-size: 15px;
-  margin-top: 90px;
-  left: 30px;
-}
 
 #changedays{
-  top:-220px;
-  left: 370px;
+  scale: 0.8;
+  top: 120px;
+  left: 270px;
 }
 
 #sbmt{
@@ -1208,9 +1222,9 @@ width: 90%;
 }
 
   #feel{
-    top: -60px;
     transform: scale(0.9);
-    margin-left: -470px;
+    margin-top: 75px;
+  margin-left: -215px;
     }
 
    #changeday{
@@ -1227,13 +1241,14 @@ width: 90%;
 
   #am, #gr, #ok, #ng{
     margin-top: 80px;
+    height: 50px;
   }
 
 
 #changed{
   scale: 0.9;
-  top:-220px;
-  left:300px;
+  top:-150px;
+  left:260px;
   }
 
   #sbmt{
