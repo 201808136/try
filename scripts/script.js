@@ -166,10 +166,10 @@ if (challenges == 0) {
        let rand = Math.floor(Math.random() * 2);
         if (rand == 1){
              //append do badge
-            $("#bdg").append('<div id= "bg"><img  src="/img/badge2.PNG" width="50" height="50" class="ball" alt="award"></div>');
+            $("#bdg").append('<div id= "bg"><img  src="img/badge2.PNG" width="50" height="50" class="ball" alt="award"></div>');
         } else {
         //append do badge
-        $("#bdg").append('<div id= "bg"><img  src="/img/badge.PNG" width="50" height="50" class="ball" alt="award"></div>');
+        $("#bdg").append('<div id= "bg"><img  src="img/badge.PNG" width="50" height="50" class="ball" alt="award"></div>');
     }}
 }
 
