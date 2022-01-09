@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62,100;125,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap');
+
+body{
+  font-family: 'Archivo', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#mobilenav{
+	display: none;
+}
+
+/*INDEX*/
+#logo { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -160px;
+  margin-left: -100px;
+  }
+
+#nome{
+    position: fixed;
+    font-size: 25px;
+    font-weight: 200;
+  left: 50%;
+  margin-top: 50px;
+  margin-left: -90px;
+  letter-spacing: 1px;
+  }
+
+  #about, #logs, #signs{
+    width: 500px;
+    position: fixed;
+    top: 50%;
+	left: 50%;
+  margin-top: -250px;
+  margin-left: -280px;
+background-color: white;
+padding: 40px;
+  }
+
+  #about{
+    top: 60%;
+  }
+
+  #intro{
+      background-color: white;
+      width: 580px;
+      height: 420px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+    margin-top: -250px;
+    margin-left: -325px;
+    padding: 40px;
+  }
+
+  #logo{
+    opacity: 0;
+
+    -webkit-transition: opacity 2s ease-in;
+       -moz-transition: opacity 2s ease-in;
+        -ms-transition: opacity 2s ease-in;
+         -o-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
+}
+
+#about, #logs, #signs, #intro {
+    opacity: 0;
+
+    -webkit-transition: opacity 1s ease-in;
+       -moz-transition: opacity 1s ease-in;
+        -ms-transition: opacity 1s ease-in;
+         -o-transition: opacity 1s ease-in;
+            transition: opacity 1s ease-in;
+}
+
+#logo load {
+    opacity: 1;
+}
+
+#about load {
+  opacity: 1;
+}
+
+
+#nome {
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+label{
+ margin-bottom: 20px;
+ font-size: 15px;
+}
+
+.login_field {
+	padding: 5px;
+	border: none;
+  height: 30px;
+  width: 250px;
+  border-bottom: solid #e0cbc5 1pt;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/*Lateral Menu Icon*/
+
+	.selector_home {
+	background: #999B84;
+	width: 10px;
+	height: 70px;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	}
+
+	.selector_profile {
+	background: #999B84;
+	width: 10px;
+	height: 70px;
+	position: absolute;
+	top: 195px;
+	left: 0;
+	}
+
+	.selector_about {
+	background: #999B84;
+	width: 10px;
+	height: 70px;
+	position: absolute;
+	top: 330px;
+	left: 0;
+	}
+
+
+/*Menu*/
+
+	aside {
+	position: absolute;
+	margin-top:60px;
+	}
+
+	#sidebar {
+	display: flex;
+	top: 0;
+	margin-left: -10px;
+	background: #FFFFFF;
+	width: 200px;
+	height: 500px;
+	margin-bottom: 50px;
+	}
+
+	#sidebar ul {
+	margin: 0;
+	padding: 20px 0;
+	width:10px;
+	background:#999B84
+	} 
+
+	ul li {
+	list-style:none;
+	}
+
+	ul li a {
+
+	padding-bottom: 50px;
+	padding-top: 50px;
+	display:block;
+	text-decoration: none;
+	font-weight: 600;	
+	}
+
+	ul img{
+		width: 35px;
+		height: 35px;
+	}
+
+/*General Definitions*/
+
+	#main {
+	margin-left: 300px;
+	width: 400px;
+	margin-top:100px;
+	}
+
+	h1 {
+		font-stretch: 100%;
+		font-variation-settings: 'wght' 600;
+		text-transform: uppercase;
+	font-size: 32px;
+	margin-bottom: 10px;
+	}
+
+	h2 {
+	font-size:22px;
+	}
+
+	.logo img {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 200px;
+	height: 200px;
+	}
+
+	a {
+	text-decoration: none;
+	}
+
+	p,  button {
+	color: black;
+	font-size: 18px;
+	font-stretch: 100%;
+		font-variation-settings: 'wght' 200;
+	}
+
+/*Home Page Options*/
+
+	#options p {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 70px 0;
+	color: #FFFFFF;	
+	font-size: 16px;
+	}
+
+	.prompts, .moods, .habits, .challenges {
+	position: absolute;
+	background: #C0C39C;
+	border-radius: 5%;
+	}
+
+    .prompts{
+        margin-left:300px;
+        margin-top: 30px;
+        width: 300px;
+        height:200px;
+        }
+
+	.moods {
+	margin-left:620px;
+	margin-top: 30px;
+	width: 250px;
+	height:200px;
+	}
+
+	.habits {
+	margin-left:300px;
+	margin-top: 250px;
+	width: 250px;
+	height:200px;
+	}
+
+	.challenges {
+	margin-left:570px;
+	margin-top: 250px;
+	width: 300px;
+	height:200px;
+	}
+
+		.challenges:hover, .moods:hover, .habits:hover, .prompts:hover{
+		background: #9a9c7d;
+		border-radius: 5%;
+		transition: all .3s ease;
+		}
+
+		/*Journal*/
+		
+		#journalentries{
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			padding-top: 100px; /* Location of the box */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+		}
+  
+		.post{
+			padding: 20px;
+		}
+  
+		.close {
+			position: absolute;
+			top: 15px;
+			right: 35px;
+			color: #f1f1f1;
+			font-size: 40px;
+			font-weight: bold;
+			transition: 0.3s;
+		}
+		
+		.close:hover,
+		.close:focus {
+			color: #bbb;
+			text-decoration: none;
+			cursor: pointer;
+		}
+  
+	  button{
+		  margin: 25px 0;
+		  padding: 10px;
+		  background-color: #e0cbc5;
+		  border-radius: 5px;
+		  border: none;
+		  font-family: 'Archivo', sans serif;
+		  cursor: pointer;
+	  }
+	  
+	  #entry{
+		 
+		  font-family: 'Archivo', sans serif;
+		  font-size: 14px;
+	  }
+
+		#newentry {
+		  position: absolute;
+		  right: 50px;
+		  bottom: 50px;
+		  height: 50px;
+		  width: 50px;
+		  background-color: #999B84;
+		  border-radius: 50%;
+		  text-align: center;
+		  font-size: 15px;
+		}
+  
+		.writingprompt1, .currentdate{
+			padding: 0 10px;
+		}
+  
+
+/*HABIT E MOOD*/
+
+#am, #gr, #ok, #ng{
+    border-radius: 5%;
+    width: 250px;
+    height: 150px;
+    margin-top: -40px;
+    margin-left: 33px;
+    border: none;
+    cursor: pointer;
+}
+
+#ams, #grs, #oks, #ngs{
+	border-radius: 5%;
+    width: 50px;
+    height: 20px;
+}
+
+#notgreat, #ng, #xx, #ngg{
+  background-color: rgb(245, 209, 202);
+}
+
+#okay, #ok, #et, #oks{
+  background-color: rgb(250, 219, 161);
+}
+
+#great, #gr, #wk, #grs{
+  background-color: rgb(228, 218, 127);
+}
+
+#amazing, #am, #slp, #ams{
+  background-color: rgb(157, 167, 135);
+}
+
+form, #changedays, #feel{
+  position: absolute; /* Stay in place */
+  padding-left: 500px;
+  padding-top: 400px;
+}
+
+#Result{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.post{
+background-color: rgb(214, 214, 214);
+padding: 20px;
+margin: 10px;
+}
+
+.modal {
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 320px; /* Location of the box */
+  padding-left: 300px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+
+html {
+font-size: 62.5%;
+}
+
+.container {
+position: absolute; /* Stay in place */
+z-index: 1; /* Sit on top */
+margin-top: 70px;
+color: black;
+/*display: flex;*/
+justify-content: center;
+align-items: center;
+}
+
+.calendar {
+width: 45rem;
+height: 52rem;
+background-color: white ;
+}
+
+.month {
+width: 410px;
+height: 12rem;
+display: flex;
+padding: 17px;
+justify-content:space-between;
+align-items: center;
+}
+
+.weekdays {
+width: 100%;
+height: 5rem;
+display: flex;
+align-items: center;
+}
+
+.weekdays div {
+font-size: 1.5rem;
+font-weight: 400;
+letter-spacing: 0.1rem;
+width: calc(44.2rem / 7);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.days {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.days div {
+border-radius: 50%;
+font-size: 1.4rem;
+margin: 0.55rem;
+width: 5rem;
+height: 5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 0.1rem solid rgb(163, 163, 163);
+transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+border: 0.1rem solid rgb(163, 163, 163);
+cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+opacity: 0.5;
+}
+
+#gráficos{
+position: absolute; /* Stay in place */
+padding-left: 530px;
+padding-top: 230px;
+font-size: 40px;
+display: grid;
+grid-template-columns: auto auto;
+opacity: 0;
+}
+
+#other{
+  position: absolute;
+margin-top: 560PX;
+margin-left: 530px;
+}
+
+#slp,#xx,#wk,#et{
+  padding: 60px;
+  margin: 10px;
+}
+
+/* Daily Challenge*/
+
+#dc {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	padding: 9px;
+	border-radius: 3px;
+	position: relative;
+}
+
+#dc:checked{
+	background-color: #999B84;
+	border: 1px solid #999B84;
+	color: #99a1a7;
+}
+
+/*
+p {
+	font-weight: 900;
+  }*/
+
+  /*tablet*/
+
+@media screen and (max-width: 1080px) {
+	.logo img{
+		width: 150px;
+		height: 150px;
+	}
+	#main{
+		width: 70%;
+		margin-left: 30%;
+	}
+	#options{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 70%;
+		max-width: 600px;
+		margin-left: 30%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		justify-content: left;
+	}
+	.prompts, .moods, .habits, .challenges{
+		position: relative;
+		width: 40%;
+		max-width: 260px;
+		height: 200px;
+		margin: 0 20px 20px 0;
+	}
+	#sidebar{
+		width: 30%;
+		max-width: 200px;
+	}
+	#abouttext{
+		max-width: 400px;
+	}
+
+	
+}
+/*mobile version*/
+@media screen and (max-width: 650px){
+.icons{
+		width: 40px;
+		height: 40px;
+	} 
+#mobilenav{
+	width: 100%;
+	height: 110px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+}
+
+#mobilenav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+	padding: 0;
+	margin: 0;
+}
+#mobilenav li{
+	padding: 0;
+}
+#mobilenav a{
+	padding: 0;
+}
+
+aside{
+	display: none;
+}
+
+/*Menu*/
+
+	aside {
+	position: absolute;
+	margin-left :0px;
+	margin-bottom: 0px;
+	}
+
+	#sidebar {
+	display: flex;
+	left: 0;
+	margin-top: -10px;
+	background: #FFFFFF;
+	width: 200px;
+	height: 500px;
+	margin-bottom: 0px;
+	}
+
+	#sidebar ul {
+	margin: 0;
+	padding: 0px 20px;
+	width:10px;
+	background:#999B84
+	} 
+
+	ul li {
+	list-style:none;
+	}
+
+	ul li a {
+
+	padding-bottom: 50px;
+	padding-top: 50px;
+	display:block;
+	text-decoration: none;
+	font-weight: 600;	
+	}
+
+	ul img{
+		width: 35px;
+		height: 35px;
+	}
+
+
+.prompts, .habits{
+	margin-left: 25px;
+}
+.prompts, .moods, .habits, .challenges{
+height: 150px;
+}
+#options{
+	margin: 0;
+	width: 100%;
+	justify-content: center;
+}
+#options p{
+	font-size: 14px;
+	padding: 50px 0;
+}
+#main{
+	width: 90%;
+	margin-left: 10%;
+}
+.logo img{
+	width: 100px;
+	height: 100px;
+}
+#bar_home{
+	width: 100%;
+	height: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#color, .blank{
+width: 45px;
+height: 10px;
+}
+#color{
+	background-color: #9a9c7d;
+}
+}
+@media screen and (max-width: 350px){
+	.prompts, .moods, .habits, .challenges{
+		width: 38%;
+		height: 120px;
+	}
+	#options p{
+		padding: 35px 0;
+		font-size: 12px;
+	}
+
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>About Us</title>
+		<meta name="author" content=">Beatriz Santos, Mariana Correia e Elvira Gómez">
+		<link rel="stylesheet" href="/css/style2.css">
+	</head>
+
+
+<body>
+	<!-- Barra de navegação para computador e tablet - lateral -->
+	<aside>
+		<nav id="sideBar">
+			<ul>
+				<li><a href="home.html"><img src="/img/home.png" height="35" weight="35" alt="home"></a></li>
+				<li><a href="perfil.html"><img src="/img/user.png" height="35" weight="35" alt="user"></a></li>
+				<li><a href="about.html"><img src="/img/info.png" height="35" weight="35" alt="info"></a></li>
+			</ul>
+			<!-- Barra sublinhadora que mostra em que página o utilizador está -->
+			<div class="selector_about"></div>
+		</nav>
+	</aside>
+
+	<!-- Logo no canto superior direito -->
+	<div class="logo">
+		<img src="/img/logos.png" width="200" height="200" alt="logo">
+	</div>
+
+	<main>
+		<!-- Para não afetar o p5.js criamos um div para servir de "main" -->
+		<div id="main">
+			<!-- H1 - identificador de página -->
+			<h1>ABOUT THE TEAM</h1>
+			<br><br><br><br><br>
+			<!-- Texto sobre o projeto -->
+			<p id="sob">Beatriz Santos, Mariana Correia and Elvira Gómez. We’re three graphic design students passionate
+				about web design. We wanted to develop an app that could make a good impact in people’s lives, so we
+				used our theoretical and technical knowledge to create something practical.
+				<br><br>
+				The programming languages used for this app were Html5 for the architecture, CSS for the appearance and
+				finally JavaScript for the functional bits. It’s truly amazing when a sheet of code becomes something
+				that can help people or at least make their day by day a bit better. We really hope On the W.A.Y. makes
+				a difference.
+			</p>
+			<br><br>
+			<!-- botão que leva ao home -->
+			<button id="jor" onclick='window.location.href="home.html"'>Go on this jouney with us!</button>
+		</div>
+	</main>
+
+	<!-- barra de navegação no telemóvel/dispositivos pequenos -->
+	<nav id="mobilenav">
+		<ul>
+			<li><a href="home.html"><img class="icons" src="../img/home.png" alt="home"></a></li>
+			<li><a href="perfil.html"><img class="icons" src="../img/user.png" alt="user"></a></li>
+			<li><a href="about.html"><img class="icons" src="../img/info.png" alt="info"></a></li>
+		</ul>
+		<!-- Barra sublinhadora que mostra em que página o utilizador está -->
+		<div id="bar_home">
+			<div class="blank"></div>
+			<div class="blank"></div>
+			<div id="color"></div>
+		</div>
+	</nav>
+	<!-- script -->
+</body>
+
+</html>

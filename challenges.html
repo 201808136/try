@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Daily Challenge</title>
+		<meta name="author" content=">Beatriz Santos, Mariana Correia e Elvira Gómez">
+		<link rel="stylesheet" href="/css/style2.css">
+	</head>
+
+<body>
+	<!-- Barra de navegação para computador e tablet - lateral -->
+	<aside>
+		<nav id="sideBar">
+			<ul>
+				<li><a href="home.html"><img src="/img/home.png" height="35" weight="35" alt="home"></a></li>
+				<li><a href="perfil.html"><img src="/img/user.png" height="35" weight="35" alt="user"></a></li>
+				<li><a href="about.html"><img src="/img/info.png" height="35" weight="35" alt="info"></a></li>
+			</ul>
+			<!-- Barra sublinhadora que mostra em que página o utilizador está -->
+			<div class="selector_home"></div>
+		</nav>
+	</aside>
+
+	<!-- Logo no canto superior direito -->
+	<div class="logo">
+		<img src="/img/logos.png" width="200" height="200" alt="logo">
+	</div>
+
+	<main>
+		<!-- Para não afetar o p5.js criamos um div para servir de "main" -->
+		<div id="main">
+			<!-- H1 - identificador de página -->
+			<h1>DAILY CHALLENGE</h1>
+			<br><br><br><br><br>
+			<!-- Introdução aos challenges -->
+			<h2 id="isd">Today I...</h2>
+
+			<!-- "Avisos" que aparcem ao submeter -->
+			<!-- Não cumpriu os challenges -->
+			<p id="tryagain">... wasn´t able to complete all of my daily challenges... I'll try again tomorrow!</p>
+			<!-- Cumpriu os challenges -->
+			<p id="cong">... completed all of my daily goals! As a reward a badge has been added to the profile!</p>
+			<br>
+
+			<!-- Lista de checkboxes para os challenges -->
+			<div id="chall">
+				<p><input type="checkbox" id="dc" name="dc" value="Daily challenge 1"> ... took time for self
+					reflection.</p>
+				<p><input type="checkbox" id="dc" name="dc" value="Daily challenge 2"> ... wrote on my journal.</p>
+				<p><input type="checkbox" id="dc" name="dc" value="Daily challenge 3"> ... followed my routine.</p>
+				<p><input type="checkbox" id="dc" name="dc" value="Daily challenge 3"> ... did everything I set out to
+					do.</p>
+			</div>
+
+			<!-- badge para o "aviso" -->
+			<div id="bgs"><img src="/img/badge.PNG" width="80" height="80" class="ball" alt="award"></div>
+			<br><br>
+
+			<!-- Para adicionar um novo challenge -->
+			<div id="news">
+				<p>What do you want your new challenge to be?</p>
+				<input id="new" type="text">
+				<!-- botão para adiconar ou voltar atrás -->
+				<button id="add">Add</button>
+				<button id="no">Go back</button>
+			</div>
+
+			<!-- Botões para fazer submit, mudar o challenge goal e adicionar um novo challenge -->
+			<button id="submit">Submit</button>
+			<button id="goal">Change my daily goal input</button>
+			<button id="newS">Add new challenge</button>
+		</div>
+	</main>
+
+	<!-- barra de navegação no telemóvel/dispositivos pequenos -->
+	<nav id="mobilenav">
+		<ul>
+			<li><a href="home.html"><img class="icons" src="../img/home.png" alt="home"></a></li>
+			<li><a href="perfil.html"><img class="icons" src="../img/user.png" alt="user"></a></li>
+			<li><a href="about.html"><img class="icons" src="../img/info.png" alt="info"></a></li>
+		</ul>
+		<!-- Barra sublinhadora que mostra em que página o utilizador está -->
+		<div id="bar_home">
+			<div id="color"></div>
+			<div class="blank"></div>
+			<div class="blank"></div>
+		</div>
+	</nav>
+
+	<!-- script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/scripts/json.js"></script>
+	<script src="/scripts/script.js"></script>
+</body>
+
+</html>

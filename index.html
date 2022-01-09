@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Topográfico</title>
+    <meta name="author" content=">Beatriz Santos, Mariana Correia e Elvira Gómez">
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+
+<body>
+    <!-- Para não afetar o p5.js criamos um div para servir de "main" -->
+    <main>
+
+        <!-- Logo e nome -->
+        <div id="logo">
+            <img src="/img/logos.png" alt="logo" style="width: 180px;">
+            <h1 id="nome">ON THE W.A.Y.</h1>
+        </div>
+
+        <!-- Retângulo branco -->
+        <div id="intro">
+
+            <!-- Secção sobre o projeto -->
+            <div id="about">
+                <h1>About us</h1><br>
+                <p>On the W.A.Y. is an app, both desktop and mobile, designed to help you achieve your goals. On the
+                    W.A.Y. will be your daily companionship and give you the tools to become the best version of
+                    yourself. Write your thoughts, keep track of your moods and overcome daily challenges.</p>
+                <br><br>
+                <button id="start">Get Started</button>
+            </div>
+
+            <!-- Secção para o Log in -->
+            <div id="logs">
+                <h1>Welcome</h1><br>
+
+                <!-- Inputs -->
+                <label for="user">Username:</label>
+                <input type="text" name="user" id="user" class="login_field"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" class="login_field"><br>
+
+                <!-- Avisos -->
+                <p id="warn">*please fill in all the blank spaces.</p>
+                <p id="account">*It seems you don't have an account. Please sign up before trying to log in.</p>
+
+                <!-- Fazer Log in -->
+                <br><br><button id="savelog">Log in.</button><br>
+
+                <!-- Ir para o  Sign up -->
+                <p class="small">Don't have an account? Then sign up <a id="su" class="links">here.</a></p>
+            </div>
+
+            <!-- Secção para o Sign up -->
+            <div id="signs">
+                <h1>Welcome</h1><br>
+
+                <!-- Inputs -->
+                <label for="users">Username:</label>
+                <input type="text" name="users" id="users" class="login_field"><br><br>
+                <label for="emails">Email:</label>
+                <input type="text" name="emails" id="emails" class="login_field"><br><br>
+                <label for="passwords">Password:</label>
+                <input type="passwords" name="passwords" id="passwords" class="login_field"><br><br>
+
+                <!-- Aviso -->
+                <p id="warnsign">*please fill in all the blank spaces.</p>
+
+                <!-- Fazer Sign up -->
+                <button id="savesigns">Sign up.</button><br><br>
+
+                <!-- Ir para o Log in -->
+                <p class="small">Do you already have an account? Then log in <a id="lg" class="links">here.</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/scripts/json.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/p5.js"></script>
+    <script src="/scripts/sketch.js"></script>
+</body>
+
+</html>
