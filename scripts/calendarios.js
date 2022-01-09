@@ -178,9 +178,9 @@ if (localStorage.getItem('pass') == "webdesign") {
   }
 
   //caso já tenha a conta feita basta selecionar nas checkboxes o que foi feito hoje
-  $("#changed").append('	<p><input type="checkbox" id="dc1" name="dc" value="wakeup"> Did I go to bed early?</p><br><p><input type="checkbox" id="dc2" name="dc" value="Daily challenge 2"> Did I wake up early?</p> <br><p><input type="checkbox" id="dc3" name="dc" value="Daily challenge 3"> Did I eat healthy?</p> <br><p><input type="checkbox" id="dc4" name="dc" value="Daily challenge 3"> Did I work out?</p><button id="sbmt"> Submit</button>');
+  $("#changed").append('	<p><input type="checkbox" id="dc1" name="dc" value="wakeup"> Did I go to bed early?</p><br><p><input type="checkbox" id="dc2" name="dc" value="Daily challenge 2"> Did I wake up early?</p> <br><p><input type="checkbox" id="dc3" name="dc" value="Daily challenge 3"> Did I eat healthy?</p> <br><p><input type="checkbox" id="dc4" name="dc" value="Daily challenge 3"> Did I work out?</p> <br><button id="sbmtt"> Submit</button>');
 
-  $("#sbmt").on('click', function () {
+  $("#sbmtt").on('click', function () {
 
     //se a checkbox correspondente for assinalada, adiciona um (ou seja um dia) à percentagem (ex: antes - 23/30, depois - 24/30)
     if ($("#dc1").is(":checked")) {
@@ -201,7 +201,7 @@ if (localStorage.getItem('pass') == "webdesign") {
 
     //ao carregar no botão mostra os gráficos
     document.querySelector("#gráficos").style.opacity = "1";
-    $("#changedays").hide();
+    $("#changed").hide();
 
     //fazer percentagem - x a dividir por y vezes 100
     function percentage(partialValue, totalValue) {
